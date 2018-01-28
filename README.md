@@ -2,6 +2,7 @@
 
 This is currently a very alpha stage project, documentation will be lack luster for a few weeks. Please stand by while testing occurs. It should also be noted that no items are responsive, and are only psuedo responsive to the extent that flex-wrap is responsive. 
 
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -9,15 +10,22 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 ```
-npm install --save react-stylux-layout
+npm install --save react-stylux
 ```
 
 ## How To Use Stylux
 
-### Included in the layout version of react-stylux is:
-* Containers 1-5
-* Holders 1-13
+### Included in the base version of react-stylux is:
+* H1 1-5
+* H2 1-5
+* H3 1-5
+* H4 1-5
+* P (Paragraphs) 1-5
+* PLQ (Pull Quotes) 1-2
 
+#### Currently not done:
+* Pull Quote 1
+* Pull Quote 2
 
 ### Step by step:
 
@@ -78,1008 +86,904 @@ This is just a basic example of what can be done with stylux. Basic documentatio
 Each element will be shown with an example of the possible props equal to the default props, if no default is set then the prop will have no equals.
 Each elements will then be shown is an example of children accepted.
 
-### Layout Specific
 
+### Text Specific
 
-#### Containers (possible name change expected)
+#### Headings (all names subject to change)
 
+Each of these headings follow a specific pattern:
+* 1: Base Version - 1.333 * 1.618ish
+* 2: Smaller Version - num/1.2ish
+* 3: Larger Version - num * 1.2ish
+* 4: Light Gray Base Version
+* 5: Open (Possible outline version)
 
-##### Container1
+##### MainHeadings <H1 />
+
+###### MainHeading1
 ```
-<Container1
+<H11
+    color = 'black'
+    font = 'sans-serif'
+    size = '8em'
+    weight = '900'
     display = 'flex'
-    direction = 'row'
-    alignBlock1 = 'center'
-    block1 = '1'
-    justifyBlock1 = 'center'
-    textColor = 'yellow'
-    background = 'white'
-    padding = '0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 15px 0'
     margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts one child and renders it
+This accepts and renders one child
 ```
-<Container1>
-    <Holder1>
-    </Holder1>
-</Container1>
+<H11>This is a Heading</H11>
 ```
 
-##### Container2
+
+###### MainHeading2
 ```
-<Container2
+<H12
+    color = 'black'
+    font = 'sans-serif'
+    size = '8em'
+    weight = '900'
     display = 'flex'
-    direction = 'row'
-    alignBlock1 = 'center'
-    block1 = '1'
-    justifyBlock1 = 'center'
-    alignBlock2 ='center'
-    block2 ='1'
-    justifyBlock2 = 'center'
-    textColor = 'black'
-    background = 'white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 15px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts two children and renders them
+This accepts and renders one child
 ```
-<Container2>
-    <Holder1>
-    </Holder1>
-    <Holder1>
-    </Holder1>
-</Container2>
+<H12>This is a Heading</H12>
 ```
 
-##### Container3
+
+###### MainHeading3
 ```
-<Container3
+<H13
+    color = 'black'
+    font = 'sans-serif'
+    size = '9em'
+    weight = '900'
     display = 'flex'
-    direction = 'row'
-    alignBlock1 = 'center'
-    block1 = '1'
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 ='1'
-    justifyBlock3 = 'center'
-    textColor = 'black'
-    background = 'white'
-    padding = '0'
-    margin ='10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 15px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts three children and renders them
+This accepts and renders one child
 ```
-<Container3>
-    <Holder1>
-    </Holder1>
-    <Holder1>
-    </Holder1>
-    <Holder1>
-    </Holder1>
-</Container3>
+<H13>This is a Heading</H13>
 ```
 
-##### Container4
+
+###### MainHeading4
 ```
-<Container4
+<H14
+    color = 'lightgray'
+    font = 'sans-serif'
+    size = '8em'
+    weight = '900'
     display = 'flex'
-    direction = 'row'
-    alignBlock1 = 'center'
-    block1 = '1'
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    justifyBlock4 = 'center'
-    textColor = 'black'
-    background = 'white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 15px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts four children and renders them
+This accepts and renders one child
 ```
-<Container4>
-    <Holder1>
-    </Holder1>
-    <Holder1>
-    </Holder1>
-    <Holder1>
-    </Holder1>
-    <Holder1>
-    </Holder1>
-</Container4>
+<H14>This is a Heading</H14>
 ```
 
-##### Container5
+
+###### MainHeading5
+**Not Finished**
 ```
-<Container5
+<H15
+    color = 'black'
+    font = 'sans-serif'
+    size = '8em'
+    weight = '900'
     display = 'flex'
-    direction = 'row'
-    alignBlock1 = 'center'
-    block1 = '1'
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    justifyBlock4 = 'center'
-    alignBlock5 = 'center'
-    block5 = '1'
-    justifyBlock5 = 'center'
-    textColor = 'black'
-    background = 'white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 15px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts five children and renders them
+This accepts and renders one child
 ```
-<Container5>
-    <Holder1>
-    </Holder1>
-    <Holder1>
-    </Holder1>
-    <Holder1>
-    </Holder1>
-    <Holder1>
-    </Holder1>
-    <Holder1>
-    </Holder1>
-</Container5>
+<H15>This is a Heading</H15>
 ```
 
 
-#### Holders 
-
-##### Holder1
+##### Headings <H2 />
+###### Heading1
 ```
-<Holder1
+<H21
+    color = 'black'
+    font = 'sans-serif'
+    size = '5.646em'
+    weight = '600'
     display = 'flex'
-    direction = 'row'
-    block1direction = 'row'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 5px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts two children and renders them
+This accepts and renders one child
 ```
-<Holder1>
-    <Block2 />
-    <Block2 />
-</Holder1>
+<H21>This is a Heading</H21>
 ```
 
-##### Holder2
+
+###### Heading2
 ```
-<Holder2
+<H22
+    color = 'black'
+    font = 'sans-serif'
+    size = '4.705em'
+    weight = '600'
     display = 'flex'
-    direction = 'row'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 5px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts three children and renders them
+This accepts and renders one child
 ```
-<Holder2>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder2>
+<H22>This is a Heading</H22>
 ```
 
-##### Holder3
+
+###### Heading3
 ```
-<Holder3
+<H23
+    color = 'black'
+    font = 'sans-serif'
+    size = '6.775em'
+    weight = '600'
     display = 'flex'
-    direction = 'row'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    block4BorderLeft
-    block4BorderRight
-    block4BorderTop
-    block4BorderBottom
-    block4Border
-    justifyBlock4 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 5px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts four children and renders them
+This accepts and renders one child
 ```
-<Holder3>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder3>
+<H23>This is a Heading</H23>
 ```
 
-##### Holder4
+
+###### Heading4
 ```
-<Holder4
+<H24
+    color = 'lightgray'
+    font = 'sans-serif'
+    size = '5.646em'
+    weight = '600'
     display = 'flex'
-    direction = 'row'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    block4BorderLeft
-    block4BorderRight
-    block4BorderTop
-    block4BorderBottom
-    block4Border
-    justifyBlock4 = 'center'
-    alignBlock5 = 'center'
-    block5 = '1'
-    block5BorderLeft
-    block5BorderRight
-    block5BorderTop
-    block5BorderBottom
-    block5Border
-    justifyBlock5 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 5px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts five children and renders them
+This accepts and renders one child
 ```
-<Holder4>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder4>
+<H24>This is a Heading</H24>
 ```
 
-##### Holder5
+
+###### Heading5
+**Not Finished**
 ```
-<Holder5
+<Heading5
+    color = 'black'
+    font = 'sans-serif'
+    size = '5.646em'
+    weight = '600'
     display = 'flex'
-    direction = 'column'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 5px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts two children and renders them
+This accepts and renders one child
 ```
-<Holder5>
-    <Block2 />
-    <Block2 />
-</Holder5>
+<H25>This is a Heading</H25>
 ```
 
-##### Holder6
+
+##### SubHeadings <H3 />
+
+###### SubHeading1
 ```
-<Holder6
+<H31
+    color = 'black'
+    font = 'sans-serif'
+    size = '3.489em'
+    weight = '400'
     display = 'flex'
-    direction = 'column'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 5px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts three children and renders them
+This accepts and renders one child
 ```
-<Holder6>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder6>
+<H31>This is a Heading</H31>
 ```
 
-##### Holder7
+
+###### SubHeading2
 ```
-<Holder7
+<H32
+    color = 'black'
+    font = 'sans-serif'
+    size = '2.9075em'
+    weight = '400'
     display = 'flex'
-    direction = 'column'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    block4BorderLeft
-    block4BorderRight
-    block4BorderTop
-    block4BorderBottom
-    block4Border
-    justifyBlock4 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 5px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts four children and renders them
+This accepts and renders one child
 ```
-<Holder7>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder7>
+<H32>This is a Heading</H32>
 ```
 
-##### Holder8
+
+###### SubHeading3
 ```
-<Holder8
+<H33
+    color = 'black'
+    font = 'sans-serif'
+    size = '4.187em'
+    weight = '400'
     display = 'flex'
-    direction = 'column'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    block4BorderLeft
-    block4BorderRight
-    block4BorderTop
-    block4BorderBottom
-    block4Border
-    justifyBlock4 = 'center'
-    alignBlock5 = 'center'
-    block5 = '1'
-    block5BorderLeft
-    block5BorderRight
-    block5BorderTop
-    block5BorderBottom
-    block5Border
-    justifyBlock5 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 5px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts five children and renders them
+This accepts and renders one child
 ```
-<Holder8>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder8>
+<H33>This is a Heading</H33>
 ```
 
-##### Holder9
+
+###### SubHeading4
 ```
-<Holder9
+<H34
+    color = lightgray'
+    font = 'sans-serif'
+    size = '3.489em'
+    weight = '400'
     display = 'flex'
-    direction = 'column'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    block4BorderLeft
-    block4BorderRight
-    block4BorderTop
-    block4BorderBottom
-    block4Border
-    justifyBlock4 = 'center'
-    alignBlock5 = 'center'
-    block5 = '1'
-    block5BorderLeft
-    block5BorderRight
-    block5BorderTop
-    block5BorderBottom
-    block5Border
-    justifyBlock5 = 'center'
-    alignBlock6 = 'center'
-    block6 = '1'
-    block6BorderLeft
-    block6BorderRight
-    block6BorderTop
-    block6BorderBottom
-    block6Border
-    justifyBlock6 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 5px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts six children and renders them
+This accepts and renders one child
 ```
-<Holder9>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder9>
+<H34>This is a Heading</H34>
 ```
 
-##### Holder10
+
+###### SubHeading5
+**Not Finished**
 ```
-<Holder10
+<H35
+    color = 'black'
+    font = 'sans-serif'
+    size = '3.489em'
+    weight = '400'
     display = 'flex'
-    direction = 'column'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    block4BorderLeft
-    block4BorderRight
-    block4BorderTop
-    block4BorderBottom
-    block4Border
-    justifyBlock4 = 'center'
-    alignBlock5 = 'center'
-    block5 = '1'
-    block5BorderLeft
-    block5BorderRight
-    block5BorderTop
-    block5BorderBottom
-    block5Border
-    justifyBlock5 = 'center'
-    alignBlock6 = 'center'
-    block6 = '1'
-    block6BorderLeft
-    block6BorderRight
-    block6BorderTop
-    block6BorderBottom
-    block6Border
-    justifyBlock6 = 'center'
-    alignBlock7 = 'center'
-    block7 = '1'
-    block7BorderLeft
-    block7BorderRight
-    block7BorderTop
-    block7BorderBottom
-    block7Border
-    justifyBlock7 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 5px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts seven children and renders them
+This accepts and renders one child
 ```
-<Holder10>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder10>
+<H35>This is a Heading</H35>
 ```
 
-##### Holder11
+
+##### SubHeadings <H4 />
+
+###### SecondarySubHeading1
 ```
-<Holder11
+<H41
+    color = 'black'
+    font = 'sans-serif'
+    size = '2.157em'
+    weight = '200'
     display = 'flex'
-    direction = 'column'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    block4BorderLeft
-    block4BorderRight
-    block4BorderTop
-    block4BorderBottom
-    block4Border
-    justifyBlock4 = 'center'
-    alignBlock5 = 'center'
-    block5 = '1'
-    block5BorderLeft
-    block5BorderRight
-    block5BorderTop
-    block5BorderBottom
-    block5Border
-    justifyBlock5 = 'center'
-    alignBlock6 = 'center'
-    block6 = '1'
-    block6BorderLeft
-    block6BorderRight
-    block6BorderTop
-    block6BorderBottom
-    block6Border
-    justifyBlock6 = 'center'
-    alignBlock7 = 'center'
-    block7 = '1'
-    block7BorderLeft
-    block7BorderRight
-    block7BorderTop
-    block7BorderBottom
-    block7Border
-    justifyBlock7 = 'center'
-    alignBlock8 = 'center'
-    block8 = '1'
-    block8BorderLeft
-    block8BorderRight
-    block8BorderTop
-    block8BorderBottom
-    block8Border
-    justifyBlock8 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 3px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts eight children and renders them
+This accepts and renders one child
 ```
-<Holder11>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder11>
+<H41>This is a Heading</H41>
 ```
 
-##### Holder12
+###### SecondarySubHeading2
 ```
-<Holder12
+<H42
+    color = 'black'
+    font = 'sans-serif'
+    size = '1.7975em'
+    weight = '200'
     display = 'flex'
-    direction = 'column'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    block4BorderLeft
-    block4BorderRight
-    block4BorderTop
-    block4BorderBottom
-    block4Border
-    justifyBlock4 = 'center'
-    alignBlock5 = 'center'
-    block5 = '1'
-    block5BorderLeft
-    block5BorderRight
-    block5BorderTop
-    block5BorderBottom
-    block5Border
-    justifyBlock5 = 'center'
-    alignBlock6 = 'center'
-    block6 = '1'
-    block6BorderLeft
-    block6BorderRight
-    block6BorderTop
-    block6BorderBottom
-    block6Border
-    justifyBlock6 = 'center'
-    alignBlock7 = 'center'
-    block7 = '1'
-    block7BorderLeft
-    block7BorderRight
-    block7BorderTop
-    block7BorderBottom
-    block7Border
-    justifyBlock7 = 'center'
-    alignBlock8 = 'center'
-    block8 = '1'
-    block8BorderLeft
-    block8BorderRight
-    block8BorderTop
-    block8BorderBottom
-    block8Border
-    justifyBlock8 = 'center'
-    alignBlock9 = 'center'
-    block9 = '1'
-    block9BorderLeft
-    block9BorderRight
-    block9BorderTop
-    block9BorderBottom
-    block9Border
-    justifyBlock9 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 3px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts nine children and renders them
+This accepts and renders one child
 ```
-<Holder12>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder12>
+<H42>This is a Heading</H42>
 ```
 
-##### Holder13
+
+###### SecondarySubHeading3
 ```
-<Holder12
+<H43
+    color = 'black'
+    font = 'sans-serif'
+    size = '2.588em'
+    weight = '200'
     display = 'flex'
-    direction = 'column'
-    alignBlock1 = 'center'
-    block1 = '1'
-    block1BorderLeft
-    block1BorderRight
-    block1BorderTop
-    block1BorderBottom
-    block1Border
-    justifyBlock1 = 'center'
-    alignBlock2 = 'center'
-    block2 = '1'
-    block2BorderLeft
-    block2BorderRight
-    block2BorderTop
-    block2BorderBottom
-    block2Border
-    justifyBlock2 = 'center'
-    alignBlock3 = 'center'
-    block3 = '1'
-    block3BorderLeft
-    block3BorderRight
-    block3BorderTop
-    block3BorderBottom
-    block3Border
-    justifyBlock3 = 'center'
-    alignBlock4 = 'center'
-    block4 = '1'
-    block4BorderLeft
-    block4BorderRight
-    block4BorderTop
-    block4BorderBottom
-    block4Border
-    justifyBlock4 = 'center'
-    alignBlock5 = 'center'
-    block5 = '1'
-    block5BorderLeft
-    block5BorderRight
-    block5BorderTop
-    block5BorderBottom
-    block5Border
-    justifyBlock5 = 'center'
-    alignBlock6 = 'center'
-    block6 = '1'
-    block6BorderLeft
-    block6BorderRight
-    block6BorderTop
-    block6BorderBottom
-    block6Border
-    justifyBlock6 = 'center'
-    alignBlock7 = 'center'
-    block7 = '1'
-    block7BorderLeft
-    block7BorderRight
-    block7BorderTop
-    block7BorderBottom
-    block7Border
-    justifyBlock7 = 'center'
-    alignBlock8 = 'center'
-    block8 = '1'
-    block8BorderLeft
-    block8BorderRight
-    block8BorderTop
-    block8BorderBottom
-    block8Border
-    justifyBlock8 = 'center'
-    alignBlock9 = 'center'
-    block9 = '1'
-    block9BorderLeft
-    block9BorderRight
-    block9BorderTop
-    block9BorderBottom
-    block9Border
-    justifyBlock9 = 'center'
-    alignBlock10 = 'center'
-    block10 = '1'
-    block10BorderLeft
-    block10BorderRight
-    block10BorderTop
-    block10BorderBottom
-    block10Border
-    justifyBlock10 = 'center'
-    textColor = 'yellow'
-    background ='white'
-    padding = '0'
-    margin = '10px 0'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 3px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
     >
 ```
-This accepts ten children and renders them
+This accepts and renders one child
 ```
-<Holder13>
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-    <Block2 />
-</Holder13>
+<H43>This is a Heading</H43>
 ```
+
+
+###### SecondarySubHeading4
+```
+<H44
+    color = 'lightgray'
+    font = 'sans-serif'
+    size = '2.157em'
+    weight = '200'
+    display = 'flex'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 3px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
+    >
+```
+This accepts and renders one child
+```
+<H44>This is a Heading</H44>
+```
+
+
+###### SecondarySubHeading5
+**Not Finished**
+```
+<H45
+    color = 'black'
+    font = 'sans-serif'
+    size = '2.157em'
+    weight = '200'
+    display = 'flex'
+    align = 'center'
+    textAlign = 'center'
+    padding = '0 0 3px 0'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
+    >
+```
+This accepts and renders one child
+```
+<H45>This is a Heading</H45>
+```
+
+
+#### Paragraphs (all names subject to change)
+
+Each of these paragraphs follow a specific pattern:
+* 1: Base Version - 1.333
+* 2: Smaller Version - 0.9
+* 3: Larger Version - 1.6
+* 4: Light Gray larger Version -  1.6
+* 5: Open (Possible dropcap version) - 1.333
+
+##### Paragraphs <p />
+
+###### Paragraph1
+```
+<P1
+    color = 'black'
+    font = 'serif'
+    size = '1.333em'
+    lineHeight = '1.5em'
+    weight = '400'
+    display = 'flex'
+    align = 'center'
+    textAlign = 'center'
+    padding = '10px 10%'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
+    >
+```
+This accepts and renders one child
+```
+<P1>This is a Heading</P1>
+```
+
+
+###### Paragraph2
+```
+<P2
+    color = 'black'
+    font = 'serif'
+    size = '0.9em'
+    lineHeight = '1.22em'
+    weight = '400'
+    display = 'flex'
+    align = 'center'
+    textAlign = 'center'
+    padding = '10px 10%'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
+    >
+```
+This accepts and renders one child
+```
+<P2>This is a Heading</P2>
+```
+
+
+###### Paragraph3
+```
+<P3
+    color = 'black'
+    font = 'serif'
+    size = '1.6em'
+    lineHeight = '1.8em'
+    weight = '400'
+    display = 'flex'
+    align = 'center'
+    textAlign = 'center'
+    padding = '10px 10%'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
+    >
+```
+This accepts and renders one child
+```
+<P3>This is a Heading</P3>
+```
+
+
+###### Paragraph4
+```
+<P4
+    color = 'lightgray'
+    font = 'serif'
+    size = '1.6em'
+    lineHeight = '1.8em'
+    weight = '400'
+    display = 'flex'
+    align = 'center'
+    textAlign = 'center'
+    padding = '10px 10%'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
+    >
+```
+This accepts and renders one child
+```
+<P4>This is a Heading</P4>
+```
+
+
+###### Paragraph5
+**Not Finished**
+```
+<P5
+    color = 'black'
+    font = 'serif'
+    size = '1.333em'
+    lineHeight = '1.5em'
+    weight = '400'
+    display = 'flex'
+    align = 'center'
+    textAlign = 'center'
+    padding = '10px 10%'
+    margin = '0'
+    width = 'inherit'
+    height
+    textShadow
+    bLeft
+    bRight
+    bTop
+    bBottom
+    border
+    id
+    className
+    aniCount
+    aniTime
+    aniName
+    aniDur
+    >
+```
+This accepts and renders one child
+```
+<P5>This is a Heading</P5>
+```
+
+##### Pull Quotes <blockquote />
+**Not Finished**
+###### Pullquote1
+
+###### Pullquote2
+
+
+## Known Bugs
+
+**Will be added soon**
 
 
 ## Feature Wish List
