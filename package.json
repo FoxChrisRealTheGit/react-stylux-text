@@ -1,6 +1,6 @@
 {
   "name": "react-stylux-text",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The headings and paragraph mechanic of react-stylux",
   "main": "index.js",
   "scripts": {
