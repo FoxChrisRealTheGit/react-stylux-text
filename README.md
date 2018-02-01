@@ -1,5 +1,6 @@
 # react-stylux
 
+
 **This project is part of the larger react-stylux library.**
 
 This is currently a very alpha stage project, documentation will be lack luster for a few weeks. Please stand by while testing occurs. Responsive implementation is in its infancy and will continue to improve. There are currently three sizes, please see Responsive notes for more information.
@@ -94,11 +95,8 @@ Each elements will then be shown is an example of children accepted.
 
 ### Responsive Notes:
 There are two breakpoints on the follow elements:
-* containers
-* holders
 * headings
 * paragraphs
-* images
 
 #### Small Breakpoint:
 use this through props as: smdis
@@ -106,7 +104,7 @@ the breakpoint for this is currently set at max-width: 440px (subject to change)
 
 #### Medium Breakpoint:
 use this through props as: mddis
-the breakpoint for this is currently set at min-width: 441px and max-width: 1200px (subject to change)
+the breakpoint for this is currently set at min-width: 441px and max-width: 760px (subject to change)
 
 
 ### Text Specific
@@ -120,7 +118,7 @@ Each of these headings follow a specific pattern:
 * 4: Light Gray Base Version
 * 5: Open (Possible outline version)
 
-medium size: (not fully calculated)
+medium size: (not correct calculations)
 Each of these headings follow a specific pattern:
 * 1: Base Version - 1.333 * 1.618ish
 * 2: Smaller Version - num/1.2ish
@@ -128,7 +126,7 @@ Each of these headings follow a specific pattern:
 * 4: Light Gray Base Version
 * 5: Open (Possible outline version)
 
-small size: (not fully calculated)
+small size: (not correct calculations)
 Each of these headings follow a specific pattern:
 * 1: Base Version - 1.333 * 1.618ish
 * 2: Smaller Version - num/1.2ish
@@ -143,7 +141,9 @@ Each of these headings follow a specific pattern:
 <H11
     color = 'black'
     font = 'sans-serif'
-    size = '8em'
+    size = '7em'
+    smSize =  '3.939em'
+    mdSize = '5.25em'
     weight = '900'
     display = 'flex'
     align = 'center'
@@ -166,6 +166,7 @@ Each of these headings follow a specific pattern:
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -179,7 +180,9 @@ This accepts and renders one child
 <H12
     color = 'black'
     font = 'sans-serif'
-    size = '8em'
+    size = '6em'
+    smSize =  '3.376em'
+    mdSize = '4.501em'
     weight = '900'
     display = 'flex'
     align = 'center'
@@ -202,6 +205,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -215,7 +219,9 @@ This accepts and renders one child
 <H13
     color = 'black'
     font = 'sans-serif'
-    size = '9em'
+    size = '7.5em'
+    smSize =  '4.4em'
+    mdSize = '5.7em'
     weight = '900'
     display = 'flex'
     align = 'center'
@@ -238,6 +244,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -251,7 +258,9 @@ This accepts and renders one child
 <H14
     color = 'lightgray'
     font = 'sans-serif'
-    size = '8em'
+    size = '7em'
+    smSize =  '3.939em'
+    mdSize = '5.25em'
     weight = '900'
     display = 'flex'
     align = 'center'
@@ -274,6 +283,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor  = 'lightgray'
     >
 ```
 This accepts and renders one child
@@ -288,7 +298,9 @@ This accepts and renders one child
 <H15
     color = 'black'
     font = 'sans-serif'
-    size = '8em'
+    size = '7em'
+    smSize =  '3.939em'
+    mdSize = '5.25em'
     weight = '900'
     display = 'flex'
     align = 'center'
@@ -311,6 +323,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -326,6 +339,8 @@ This accepts and renders one child
     color = 'black'
     font = 'sans-serif'
     size = '5.646em'
+    smSize =  '3em'
+    mdSize = '4em'
     weight = '600'
     display = 'flex'
     align = 'center'
@@ -348,6 +363,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -362,6 +378,8 @@ This accepts and renders one child
     color = 'black'
     font = 'sans-serif'
     size = '4.705em'
+    smSize =  '2.7em'
+    mdSize = '3em'
     weight = '600'
     display = 'flex'
     align = 'center'
@@ -384,6 +402,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -397,7 +416,9 @@ This accepts and renders one child
 <H23
     color = 'black'
     font = 'sans-serif'
-    size = '6.775em'
+    size = '6.1em'
+    smSize =  '3.5em'
+    mdSize = '4.5em'
     weight = '600'
     display = 'flex'
     align = 'center'
@@ -420,6 +441,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -434,6 +456,8 @@ This accepts and renders one child
     color = 'lightgray'
     font = 'sans-serif'
     size = '5.646em'
+    smSize =  '3em'
+    mdSize = '4em'
     weight = '600'
     display = 'flex'
     align = 'center'
@@ -456,6 +480,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor  = 'lightgray'
     >
 ```
 This accepts and renders one child
@@ -471,6 +496,8 @@ This accepts and renders one child
     color = 'black'
     font = 'sans-serif'
     size = '5.646em'
+    smSize =  '3em'
+    mdSize = '4em'
     weight = '600'
     display = 'flex'
     align = 'center'
@@ -493,6 +520,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -509,7 +537,9 @@ This accepts and renders one child
     color = 'black'
     font = 'sans-serif'
     size = '3.489em'
-    weight = '400'
+    smSize =  '2.5em'
+    mdSize = '3em'
+    weight = '600'
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -531,6 +561,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -544,8 +575,10 @@ This accepts and renders one child
 <H32
     color = 'black'
     font = 'sans-serif'
-    size = '2.9075em'
-    weight = '400'
+    size =  '2.9075em'
+    smSize =  '2em'
+    mdSize = '2.5em'
+    weight = '600'
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -567,6 +600,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -580,8 +614,10 @@ This accepts and renders one child
 <H33
     color = 'black'
     font = 'sans-serif'
-    size = '4.187em'
-    weight = '400'
+    size = '3.9em'
+    smSize =  '3em'
+    mdSize = '3.5em'
+    weight = '600'
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -603,6 +639,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -614,10 +651,12 @@ This accepts and renders one child
 ###### SubHeading4
 ```
 <H34
-    color = lightgray'
+    color = 'lightgray'
     font = 'sans-serif'
     size = '3.489em'
-    weight = '400'
+    smSize =  '2.5em'
+    mdSize = '3em'
+    weight = '600'
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -639,6 +678,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor = 'lightgray'
     >
 ```
 This accepts and renders one child
@@ -654,7 +694,9 @@ This accepts and renders one child
     color = 'black'
     font = 'sans-serif'
     size = '3.489em'
-    weight = '400'
+    smSize =  '2.5em'
+    mdSize = '3em'
+    weight = '600'
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -676,6 +718,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -691,8 +734,10 @@ This accepts and renders one child
 <H41
     color = 'black'
     font = 'sans-serif'
-    size = '2.157em'
-    weight = '200'
+    size = '3.489em'
+    smSize =  '2.5em'
+    mdSize = '3em'
+    weight = '100'
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -714,6 +759,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -726,8 +772,10 @@ This accepts and renders one child
 <H42
     color = 'black'
     font = 'sans-serif'
-    size = '1.7975em'
-    weight = '200'
+    size = '2.9025em'
+    smSize =  '2em'
+    mdSize = '2.5em'
+    weight = '100'
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -749,6 +797,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -762,8 +811,10 @@ This accepts and renders one child
 <H43
     color = 'black'
     font = 'sans-serif'
-    size = '2.588em'
-    weight = '200'
+    size = '3.9em'
+    smSize =  '3em'
+    mdSize = '3.5em'
+    weight = '100'
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -785,6 +836,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -798,8 +850,10 @@ This accepts and renders one child
 <H44
     color = 'lightgray'
     font = 'sans-serif'
-    size = '2.157em'
-    weight = '200'
+    size = '3.489em'
+    smSize =  '2.5em'
+    mdSize = '3em'
+    weight = '100'
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -821,6 +875,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor  = 'lightgray'
     >
 ```
 This accepts and renders one child
@@ -835,8 +890,10 @@ This accepts and renders one child
 <H45
     color = 'black'
     font = 'sans-serif'
-    size = '2.157em'
-    weight = '200'
+    size = '3.489em'
+    smSize =  '2.5em'
+    mdSize = '3em'
+    weight = '100'
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -858,6 +915,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -896,6 +954,8 @@ small size:
     color = 'black'
     font = 'serif'
     size = '1.333em'
+    smSize =  '1.3em'
+    mdSize = '1.3em'
     lineHeight = '1.5em'
     weight = '400'
     display = 'flex'
@@ -919,6 +979,7 @@ small size:
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -932,7 +993,9 @@ This accepts and renders one child
 <P2
     color = 'black'
     font = 'serif'
-    size = '0.9em'
+    size = '0.95em'
+    smSize =  '0.95em'
+    mdSize = '0.95em'
     lineHeight = '1.22em'
     weight = '400'
     display = 'flex'
@@ -956,6 +1019,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -970,6 +1034,8 @@ This accepts and renders one child
     color = 'black'
     font = 'serif'
     size = '1.6em'
+    smSize =  '1.5em'
+    mdSize = '1.6em'
     lineHeight = '1.8em'
     weight = '400'
     display = 'flex'
@@ -993,6 +1059,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -1007,6 +1074,8 @@ This accepts and renders one child
     color = 'lightgray'
     font = 'serif'
     size = '1.6em'
+    smSize =  '1.5em'
+    mdSize = '1.6em'
     lineHeight = '1.8em'
     weight = '400'
     display = 'flex'
@@ -1030,6 +1099,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor = 'lightgray'
     >
 ```
 This accepts and renders one child
@@ -1045,6 +1115,8 @@ This accepts and renders one child
     color = 'black'
     font = 'serif'
     size = '1.333em'
+    smSize =  '1.3em'
+    mdSize = '1.3em'
     lineHeight = '1.5em'
     weight = '400'
     display = 'flex'
@@ -1068,6 +1140,7 @@ This accepts and renders one child
     aniDur
     smdis = 'flex'
     mddis = 'flex'
+    hoverColor
     >
 ```
 This accepts and renders one child
@@ -1129,6 +1202,14 @@ This is licensed under MIT license. If used in any project, please give ackknowl
 
 
 ## Changelog
+**0.2.2**
+* Hover states added to headings and paragraphs
+* sm and md sizes added on state
+* h3 default weight changed to 600
+* h4 default weight changed to 100
+* added pull quotes styles to superstylesheet
+* updated readme for changes
+
 **0.2.1**
 * updated media queries smdis min-wdith = 440px
 * updated media queries mddis min-width = 441px
