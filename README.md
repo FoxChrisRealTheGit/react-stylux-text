@@ -17,6 +17,19 @@ npm install --save react-stylux-text
 ```
 
 ## How To Use Stylux
+### Table of Contents
+- [What's included](#whats-included-in-the-text-version-of-react-stylux-is)
+- [Step by Step](#step-by-step)
+- [Animation Notes](#animation-notes)
+- [Responsive Notes](#responsive-notes)
+- [Text](#text-specific)
+    - [Headings](#mainheadings)
+    - [Paragraphs](#paragraphs-all-names-subject-to-change)
+    - [Pull Quotes](#pull-quotes)
+- [Feature Wish List](#feature-wish-list)
+- [Acknowledgments](#acknowledgments)
+- [Changelog](#changelog)
+
 
 ### Included in the text version of react-stylux is:
 * H1 1-5
@@ -91,7 +104,59 @@ Each elements will then be shown is an example of children accepted.
 
 ### Animation Notes:
 
-**the animation library is not currently built**
+**The animation library is currently mostly from: animate.css, please see [Acknowledgments](#acknowledgments) for full acknowledgment.**
+
+#### defaults
+
+all blocks have access to:
+- animationIterationCount in the form of: props.aniCount,
+- animationTimingFunction in the form of: props.aniTime,
+- animationName in the form of: props.aniName,
+- animationDuration in the form of: props.aniDur,
+- transformOrigin in the form of: props.transformOrigin,
+
+animate.css recommends the following defaults:
+aniDur ='1s'
+aniFillMode = 'both'
+
+if wanting an infinite animation:
+aniCount = 'infinite'
+
+
+#### Animation Names
+
+to see what these do, please refer to animation [Acknowledgments](#acknowledgments) or go to http://daneden.me/animate
+each animation will be associated with suggested defaults, these will be improved as more testing is accomplished.
+
+- bounce
+    - transform-origin: center bottom
+- pulse
+- handShake
+    - animation-timing-function: ease-in-out
+- jello
+    - transform-origin: center
+- bounceIn
+    - animation-duration: 0.75s
+- bounceInDown
+- bounceInLeft
+- bounceInRight
+- bounceInUp
+- bounceOut
+- bounceOutLeft
+- bounceOutRight
+- bounceOutUp
+- fadeIn
+- fadeOut
+- flipInX (needs better integration)
+- flipInY (needs better integration)
+- flipOutX (needs better integration)
+- flipOutY (needs better integration)
+- hinge
+    - animation-duration: 2s
+- slideInLeft
+- slideInRight
+- slideOutLeft
+- slideOutRight
 
 ### Responsive Notes:
 There are two breakpoints on the follow elements:
@@ -293,10 +358,10 @@ This accepts and renders one child
 
 
 ###### MainHeading5
-**Not Finished**
 ```
 <H15
     color = 'black'
+    stroke = '3px'
     font = 'sans-serif'
     size = '7em'
     smSize =  '3.939em'
@@ -490,10 +555,10 @@ This accepts and renders one child
 
 
 ###### Heading5
-**Not Finished**
 ```
 <Heading5
     color = 'black'
+    stroke = '3px'
     font = 'sans-serif'
     size = '5.646em'
     smSize =  '3em'
@@ -688,10 +753,10 @@ This accepts and renders one child
 
 
 ###### SubHeading5
-**Not Finished**
 ```
 <H35
     color = 'black'
+    stroke = '3px'
     font = 'sans-serif'
     size = '3.489em'
     smSize =  '2.5em'
@@ -885,10 +950,10 @@ This accepts and renders one child
 
 
 ###### SecondarySubHeading5
-**Not Finished**
 ```
 <H45
     color = 'black'
+    stroke = '3px'
     font = 'sans-serif'
     size = '3.489em'
     smSize =  '2.5em'
@@ -1148,8 +1213,9 @@ This accepts and renders one child
 <P5>This is a Heading</P5>
 ```
 
-##### Pull Quotes <blockquote />
-**Not Finished**
+##### Pull Quotes
+**Not Finished- will be added in next update**
+
 ###### Pullquote1
 
 ###### Pullquote2
@@ -1180,6 +1246,8 @@ No Contributions will be accepted outside of the project team until the project 
 
 ## Versioning
 for a more detailed list of changes, please refer to the changelog
+**0.2.3**
+* best so far
 
 **0.2.1**
 * fixed media queries
@@ -1198,10 +1266,14 @@ This is licensed under MIT license. If used in any project, please give ackknowl
 * A Giant Thank you to [Dev Mountain](https://devmountain.com/) for teaching me to code good
 * A big thank you to Morten Rand-Hendriksen for your videos on flex box and the code that allows the className socialness to work
 * Credit to http://meyerweb.com/eric/tools/css/reset/  for use of a reset file
-* Credit to the React-Styles team (used as nestingstyles) for the code to allow for media queries through style
+* Credit to the React-Styles team (used as nestingstyles) for the code to allow for media queries through style object
+* Massive credit for the animations to Daniel Eden - animate.css - http://daneden.me/animate
 
 
 ## Changelog
+**0.2.3**
+* updated to current stable react-stylux version 0.2.9
+
 **0.2.2**
 * Hover states added to headings and paragraphs
 * sm and md sizes added on state
