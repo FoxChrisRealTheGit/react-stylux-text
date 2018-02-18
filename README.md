@@ -45,12 +45,12 @@ npm install --save react-stylux-text
 
 ### Step by step:
 
-Stylux utilizes three main components and flex-box to handle layouts effectively. As an example, import Container1, Holder1, and Navbar1:
+Stylux utilizes three main components and flex-box to handle layouts effectively. As an example, import Container, Holder, and Navbar1:
 
 ```
 import {
-    Container1,
-    Holder1,
+    Container,
+    Holder,
     NavBar1,
 } from 'react-stylux';
 ```
@@ -58,44 +58,45 @@ import {
 Now you can use these components like any other component!
 
 ```
-<Container1>
-    <Holder1>
+<Container>
+    <Holder>
         <NavBar1>
-            <Link to="">Item1</Link>
-            <Link to="">Item2</Link>
-            <Link to="">Item3</Link>
+            <a href="">Item1</a>
+            <a href="">Item2</a>
+            <a href="">Item3</a>
         </NavBar1>
         <NavBar1>
-            <Link to="facebook.com"></Link>
-            <Link to="twitter.com"></Link>
-            <Link to="instagram.com"></Link>
+            <a href="facebook.com"></a>
+            <a href="twitter.com"></a>
+            <a href="instagram.com"></a>
         </NavBar1>
-    </Holder1>
-</Container1>
+    </Holder>
+</Container>
 ```
 Children are passed into the block level component to render based on type. In the example above, NavBar1 is used in conjunction with Holder1. This will create two spaces, and create two navbars center aligned. As a special note, every navbar block is hooked up with a className to psuedo render a logo based on href/to address info using the font awesome library.
 
 props can be passed into every item to further create a custom expierence:
 ```
-<Container1>
-    <Holder1
+<Container>
+    <Holder
         block1="2">
         <NavBar1>
-            <Link to="">Item1</Link>
-            <Link to="">Item2</Link>
-            <Link to="">Item3</Link>
+            <a href="">Item1</a>
+            <a href="">Item2</a>
+            <a href="">Item3</a>
         </NavBar1>
         <NavBar1
             align="flex-end"
             navbarWidth="60%">
-            <Link to="facebook.com"></Link>
-            <Link to="twitter.com"></Link>
-            <Link to="instagram.com"></Link>
+            <a href="facebook.com"></a>
+            <a href="twitter.com"></a>
+            <a href="instagram.com"></a>
         </NavBar1>
-    </Holder1>
-</Container1>
+    </Holder>
+</Container>
 ```
 This is just a basic example of what can be done with stylux. Basic documentation on the current blocks can be seen below, a more comprehensive website is currently being worked on.
+
 
 ## Documentation:
 
@@ -205,19 +206,20 @@ Each of these headings follow a specific pattern:
 ```
 <H11
     color = 'black'
-    font = 'sans-serif'
+    font = 'inherit'
     size = '7em'
     smSize =  '3.939em'
     mdSize = '5.25em'
     weight = '900'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 15px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -243,12 +245,13 @@ This accepts and renders one child
 ###### MainHeading2
 ```
 <H12
-    color = 'black'
+    color
     font = 'sans-serif'
     size = '6em'
     smSize =  '3.376em'
     mdSize = '4.501em'
     weight = '900'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -256,7 +259,7 @@ This accepts and renders one child
     margin = '0'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -282,12 +285,13 @@ This accepts and renders one child
 ###### MainHeading3
 ```
 <H13
-    color = 'black'
+    color
     font = 'sans-serif'
     size = '7.5em'
     smSize =  '4.4em'
     mdSize = '5.7em'
     weight = '900'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -295,7 +299,7 @@ This accepts and renders one child
     margin = '0'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -327,6 +331,7 @@ This accepts and renders one child
     smSize =  '3.939em'
     mdSize = '5.25em'
     weight = '900'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -334,7 +339,7 @@ This accepts and renders one child
     margin = '0'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -360,13 +365,14 @@ This accepts and renders one child
 ###### MainHeading5
 ```
 <H15
-    color = 'black'
+    color
     stroke = '3px'
     font = 'sans-serif'
     size = '7em'
     smSize =  '3.939em'
     mdSize = '5.25em'
     weight = '900'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -374,7 +380,7 @@ This accepts and renders one child
     margin = '0'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -401,12 +407,13 @@ This accepts and renders one child
 ###### Heading1
 ```
 <H21
-    color = 'black'
+    color
     font = 'sans-serif'
     size = '5.646em'
     smSize =  '3em'
     mdSize = '4em'
     weight = '600'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
@@ -414,7 +421,7 @@ This accepts and renders one child
     margin = '0'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -440,20 +447,21 @@ This accepts and renders one child
 ###### Heading2
 ```
 <H22
-    color = 'black'
+    color
     font = 'sans-serif'
     size = '4.705em'
     smSize =  '2.7em'
     mdSize = '3em'
     weight = '600'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 5px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -479,20 +487,21 @@ This accepts and renders one child
 ###### Heading3
 ```
 <H23
-    color = 'black'
+    color
     font = 'sans-serif'
     size = '6.1em'
     smSize =  '3.5em'
     mdSize = '4.5em'
     weight = '600'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 5px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -524,14 +533,15 @@ This accepts and renders one child
     smSize =  '3em'
     mdSize = '4em'
     weight = '600'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 5px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -557,21 +567,22 @@ This accepts and renders one child
 ###### Heading5
 ```
 <Heading5
-    color = 'black'
+    color
     stroke = '3px'
     font = 'sans-serif'
     size = '5.646em'
     smSize =  '3em'
     mdSize = '4em'
     weight = '600'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 5px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -599,20 +610,21 @@ This accepts and renders one child
 ###### SubHeading1
 ```
 <H31
-    color = 'black'
+    color
     font = 'sans-serif'
     size = '3.489em'
     smSize =  '2.5em'
     mdSize = '3em'
     weight = '600'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 5px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -638,20 +650,21 @@ This accepts and renders one child
 ###### SubHeading2
 ```
 <H32
-    color = 'black'
+    color
     font = 'sans-serif'
     size =  '2.9075em'
     smSize =  '2em'
     mdSize = '2.5em'
     weight = '600'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 5px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -677,20 +690,21 @@ This accepts and renders one child
 ###### SubHeading3
 ```
 <H33
-    color = 'black'
+    color
     font = 'sans-serif'
     size = '3.9em'
     smSize =  '3em'
     mdSize = '3.5em'
     weight = '600'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 5px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -722,14 +736,15 @@ This accepts and renders one child
     smSize =  '2.5em'
     mdSize = '3em'
     weight = '600'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 5px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -755,21 +770,22 @@ This accepts and renders one child
 ###### SubHeading5
 ```
 <H35
-    color = 'black'
+    color
     stroke = '3px'
     font = 'sans-serif'
     size = '3.489em'
     smSize =  '2.5em'
     mdSize = '3em'
     weight = '600'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 5px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -797,20 +813,21 @@ This accepts and renders one child
 ###### SecondarySubHeading1
 ```
 <H41
-    color = 'black'
+    color
     font = 'sans-serif'
     size = '3.489em'
     smSize =  '2.5em'
     mdSize = '3em'
     weight = '100'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 3px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -835,20 +852,21 @@ This accepts and renders one child
 ###### SecondarySubHeading2
 ```
 <H42
-    color = 'black'
+    color
     font = 'sans-serif'
     size = '2.9025em'
     smSize =  '2em'
     mdSize = '2.5em'
     weight = '100'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 3px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -874,20 +892,21 @@ This accepts and renders one child
 ###### SecondarySubHeading3
 ```
 <H43
-    color = 'black'
+    color
     font = 'sans-serif'
     size = '3.9em'
     smSize =  '3em'
     mdSize = '3.5em'
     weight = '100'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 3px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -919,14 +938,15 @@ This accepts and renders one child
     smSize =  '2.5em'
     mdSize = '3em'
     weight = '100'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 3px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -952,21 +972,22 @@ This accepts and renders one child
 ###### SecondarySubHeading5
 ```
 <H45
-    color = 'black'
+    color
     stroke = '3px'
     font = 'sans-serif'
     size = '3.489em'
     smSize =  '2.5em'
     mdSize = '3em'
     weight = '100'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
     padding = '0 0 3px 0'
-    margin = '0'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -1016,21 +1037,22 @@ small size:
 ###### Paragraph1
 ```
 <P1
-    color = 'black'
+    color =
     font = 'serif'
     size = '1.333em'
     smSize =  '1.3em'
     mdSize = '1.3em'
     lineHeight = '1.5em'
     weight = '400'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
-    padding = '10px 10%'
-    margin = '0'
+    padding = '5px'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    hadow
     bLeft
     bRight
     bTop
@@ -1056,21 +1078,22 @@ This accepts and renders one child
 ###### Paragraph2
 ```
 <P2
-    color = 'black'
+    color
     font = 'serif'
     size = '0.95em'
     smSize =  '0.95em'
     mdSize = '0.95em'
     lineHeight = '1.22em'
     weight = '400'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
-    padding = '10px 10%'
-    margin = '0'
+    padding = '5px'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -1096,21 +1119,22 @@ This accepts and renders one child
 ###### Paragraph3
 ```
 <P3
-    color = 'black'
+    color
     font = 'serif'
     size = '1.6em'
     smSize =  '1.5em'
     mdSize = '1.6em'
     lineHeight = '1.8em'
     weight = '400'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
-    padding = '10px 10%'
-    margin = '0'
+    padding = '5px'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    sShadow
     bLeft
     bRight
     bTop
@@ -1143,14 +1167,15 @@ This accepts and renders one child
     mdSize = '1.6em'
     lineHeight = '1.8em'
     weight = '400'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
-    padding = '10px 10%'
-    margin = '0'
+    padding = '5px'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -1177,21 +1202,22 @@ This accepts and renders one child
 **Not Finished**
 ```
 <P5
-    color = 'black'
+    color
     font = 'serif'
     size = '1.333em'
     smSize =  '1.3em'
     mdSize = '1.3em'
     lineHeight = '1.5em'
     weight = '400'
+    variant
     display = 'flex'
     align = 'center'
     textAlign = 'center'
-    padding = '10px 10%'
-    margin = '0'
+    padding = '5px'
+    margin = '1px'
     width = 'inherit'
     height
-    textShadow
+    shadow
     bLeft
     bRight
     bTop
@@ -1214,8 +1240,7 @@ This accepts and renders one child
 ```
 
 ##### Pull Quotes
-**Not Finished- will be added in next update**
-
+**Not Finished**
 ###### Pullquote1
 
 ###### Pullquote2
@@ -1246,7 +1271,7 @@ No Contributions will be accepted outside of the project team until the project 
 
 ## Versioning
 for a more detailed list of changes, please refer to the changelog
-**0.2.3**
+**0.2.4**
 * best so far
 
 **0.2.1**
@@ -1271,6 +1296,12 @@ This is licensed under MIT license. If used in any project, please give ackknowl
 
 
 ## Changelog
+**0.2.4 - react-stylux 0.3.6**
+* Adding React.Fragment to check it out on Headers & Paragraphs
+* Adjusted padding & margin on Paragraphs and Headers
+* Added flex: 1 as default to Paragraph and Headers to fill space completely
+* Added fontVariant as props.variant for Paragraphs and Headers
+
 **0.2.3**
 * updated to current stable react-stylux version 0.2.9
 
